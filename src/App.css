@@ -1,0 +1,116 @@
+body{
+  background-image: url('./assets/bg.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.main-container{
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+h3{
+  color: brown;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.add-panel{
+  width:567px;
+  height: 60px;
+  border: 3px solid;
+}
+
+.searchinput{
+  display: block;
+  margin: 15px auto;
+  border: 1px solid;
+  border-radius: 5px;
+  height: 25px;
+  width: 210px;
+  background-color: blanchedalmond;
+}
+
+.add-panel{
+  width: 585px;
+  height: 60px;
+   margin: 0 auto ;
+  border: 1px solid;
+  background-color: rgb(174, 209, 78);
+}
+
+.addpaneldiv{
+   margin-left: 5px;
+   display: inline-block;
+}
+
+.addpanelinput{
+  border: 1px solid;
+  border-radius: 5px;
+  height: 25px;
+  width: 140px;
+  background-color: aliceblue;
+   color: black;
+
+}
+
+.addbtn{
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 11px;
+  line-height: 15px;
+  margin-left: 5px;
+  background-color: greenyellow;
+}
+
+.cancelbtn{
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 11px;
+  line-height: 15px;
+  margin-left: 5px;
+  background-color: rgb(215, 130, 124);
+  color: black;
+}
+
+.table{
+  width: 585px;
+  height: fit-content;
+  border: 1px solid;
+  border-collapse: collapse;
+  margin-top: 12px;
+  text-align: center;
+  background-color: white;
+}
+
+th{
+  border: 1px solid;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: rgb(130, 158, 182);
+}
+
+tr:nth-child(even){
+  background-color: rgb(180, 231, 231);
+}
+td{
+  border: 1px solid;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.error{
+  color: red;
+}
+
+.idx{
+  margin: auto 5px;
+}
+
+.pagebtn{
+  background-color: rgb(182, 139, 222);
+  margin: auto 5px;
+}
