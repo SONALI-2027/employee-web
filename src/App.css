@@ -1,8 +1,5 @@
 body{
-  background-image: url('./assets/bg.avif');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+ background-color: rgb(220, 191, 146);
 }
 
 
@@ -61,13 +58,13 @@ h3{
   border: 1px solid;
   border-radius: 5px;
   font-size: 11px;
-  line-height: 15px;
+  line-height:15px;
   margin-left: 5px;
   background-color: greenyellow;
 }
 
 .cancelbtn{
-  border: 1px solid;
+  border: 2px solid;
   border-radius: 5px;
   font-size: 11px;
   line-height: 15px;
@@ -113,4 +110,5 @@ td{
 .pagebtn{
   background-color: rgb(182, 139, 222);
   margin: auto 5px;
+  line-height: 25px;
 }
