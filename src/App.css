@@ -1,6 +1,12 @@
 body{
-  background: #f4f7fb;
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #111827,
+    #1e1b4b
+  );
   font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
 }
 
 .main-container{
@@ -10,22 +16,31 @@ body{
 }
 
 h3{
-  color: #1f2937;
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 42px;
+  font-weight: 800;
   margin-bottom: 25px;
-}
 
-/* FORM PANEL */
+  background: linear-gradient(
+    90deg,
+    #22d3ee,
+    #a855f7,
+    #ec4899
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .add-panel{
   width: 900px;
-  margin: 0 auto;
+  margin: auto;
   padding: 25px;
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
-  border: none;
+  background: rgba(30,41,59,0.95);
+  border-radius: 18px;
+  box-shadow:
+    0 0 20px rgba(168,85,247,0.35),
+    0 0 40px rgba(34,211,238,0.15);
+  border: 1px solid rgba(255,255,255,0.08);
   height: auto;
 }
 
@@ -36,62 +51,70 @@ h3{
 }
 
 .addpaneldiv label{
+  color: #cbd5e1;
   font-size: 14px;
   font-weight: 600;
-  color: #374151;
 }
 
 .addpanelinput{
   width: 200px;
   height: 40px;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  padding: 0 10px;
-  margin-top: 5px;
-  font-size: 14px;
-  transition: all 0.3s ease;
+  background: #0f172a;
+  border: 1px solid #334155;
+  color: white;
+  border-radius: 10px;
+  padding-left: 10px;
+  transition: 0.3s;
 }
 
 .addpanelinput:focus{
   outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+  border-color: #22d3ee;
+  box-shadow:
+    0 0 10px #22d3ee,
+    0 0 20px rgba(34,211,238,0.3);
 }
 
-/* BUTTONS */
-
 .addbtn{
-  margin-left: 10px;
-  height: 40px;
-  padding: 0 18px;
+  height: 42px;
+  padding: 0 20px;
   border: none;
-  border-radius: 8px;
-  background: #2563eb;
+  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    #06b6d4,
+    #3b82f6
+  );
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  transition: 0.3s;
+  margin-left: 10px;
+  transition: all 0.3s ease;
 }
 
 .addbtn:hover{
-  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px #22d3ee;
 }
 
 .cancelbtn{
-  margin-left: 10px;
-  height: 40px;
-  padding: 0 18px;
+  height: 42px;
+  padding: 0 20px;
   border: none;
-  border-radius: 8px;
-  background: #ef4444;
+  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    #ef4444,
+    #ec4899
+  );
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  transition: 0.3s;
+  margin-left: 10px;
 }
 
 .cancelbtn:hover{
-  background: #dc2626;
+  box-shadow: 0 0 15px #ec4899;
 }
 
 .cancelbtn:disabled{
@@ -99,97 +122,106 @@ h3{
   cursor: not-allowed;
 }
 
-/* SEARCH */
-
 .searchinput{
   display: block;
-  width: 300px;
+  width: 320px;
   height: 42px;
   margin: 25px auto;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
+  background: #0f172a;
+  color: white;
+  border: 1px solid #334155;
+  border-radius: 10px;
   padding-left: 12px;
-  font-size: 14px;
-  background: white;
 }
 
 .searchinput:focus{
   outline: none;
-  border-color: #2563eb;
+  border-color: #a855f7;
+  box-shadow: 0 0 15px rgba(168,85,247,0.4);
 }
-
-/* TABLE */
 
 .table{
   width: 100%;
   border-collapse: collapse;
-  margin-top: 15px;
-  background: white;
+  margin-top: 20px;
   overflow: hidden;
   border-radius: 12px;
+  background: #111827;
+  color: white;
 }
 
 .table th{
-  background: #2563eb;
+  background: linear-gradient(
+    90deg,
+    #7c3aed,
+    #2563eb
+  );
   color: white;
-  padding: 14px;
-  font-size: 15px;
+  padding: 15px;
   border: none;
+  font-size: 15px;
 }
 
 .table td{
   padding: 12px;
-  border-bottom: 1px solid #e5e7eb;
-  font-size: 14px;
+  border-bottom: 1px solid #334155;
 }
 
 .table tr:nth-child(even){
-  background: #f8fafc;
+  background: #1e293b;
 }
 
 .table tr:hover{
-  background: #eaf2ff;
-  transition: 0.2s;
+  background: rgba(34,211,238,0.15);
+  transition: 0.3s;
 }
 
-/* EDIT DELETE BUTTONS */
-
 .editbtn{
-  background: #f59e0b;
+  background: linear-gradient(
+    135deg,
+    #f59e0b,
+    #fb7185
+  );
   color: white;
   border: none;
-  border-radius: 6px;
-  padding: 8px 12px;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 700;
   cursor: pointer;
-  font-weight: 600;
 }
 
 .editbtn:hover{
-  background: #d97706;
+  box-shadow: 0 0 12px #f59e0b;
 }
 
 .deletebtn{
-  background: #ef4444;
+  background: linear-gradient(
+    135deg,
+    #ef4444,
+    #dc2626
+  );
   color: white;
   border: none;
-  border-radius: 6px;
-  padding: 8px 12px;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 700;
   cursor: pointer;
-  font-weight: 600;
 }
 
 .deletebtn:hover{
-  background: #dc2626;
+  box-shadow: 0 0 12px #ef4444;
 }
-
-/* PAGINATION */
 
 .pagediv{
   margin-top: 25px;
 }
 
 .pagebtn{
-  background: #2563eb;
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #2563eb
+  );
   color: white;
   border: none;
   border-radius: 8px;
@@ -200,24 +232,22 @@ h3{
 }
 
 .pagebtn:hover{
-  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px #7c3aed;
 }
 
 .pagebtn:disabled{
-  background: #cbd5e1;
+  opacity: 0.5;
   cursor: not-allowed;
 }
 
 .idx{
-  font-weight: 600;
-  color: #374151;
+  color: #e2e8f0;
+  font-weight: 700;
 }
 
-/* ERROR */
-
 .err{
-  color: #ef4444;
-  font-size: 14px;
+  color: #ff6b6b;
   font-weight: 600;
   display: block;
   margin-bottom: 10px;
