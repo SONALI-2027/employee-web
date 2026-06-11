@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import com.employee.entity.Employee;
 import com.employee.service.EmployeeService;
 
-@CrossOrigin(maxAge = 3360)
+@CrossOrigin(origins = "*",maxAge = 3360)
 @RestController
 public class EmployeeController {
 
