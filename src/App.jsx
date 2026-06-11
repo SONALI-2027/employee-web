@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import BASE_URL from './config';
 import {
   useTable,
   useGlobalFilter,
@@ -56,7 +57,7 @@ const {
  
   
   const getAllEmployees=()=>{
-    axios.get("http://localhost:8086/employees").then((res)=>{
+   axios.get(`${BASE_URL}/employees`).then((res)=>{
       console.log(res.data);
       setEmployees(res.data);
     });
@@ -75,7 +76,7 @@ const {
   const handleDelete=async(emp)=>{
     const isConfirmed=window.confirm("Are you sure you want to delete?");
     if(isConfirmed){
-     await axios.delete(`http://localhost:8086/employees/${emp.employeeId}`).then((res)=>{
+     await axios.delete(`${BASE_URL}/employees/${emp.employeeId}`).then((res)=>{
       console.log(res.data);
       setEmployees(res.data);
     });
@@ -103,11 +104,11 @@ const {
       seterrMsg(errorMsg);
     }  
     if((errorMsg.length===0) && employeeData.employeeId){
-      await axios.patch(`http://localhost:8086/employees/${employeeData.employeeId}`,employeeData).then((res)=>{
+      await axios.patch(`${BASE_URL}/employees/${employeeData.employeeId}`, employeeData).then((res)=>{
       console.log(res.data);
     });
     }else if(errorMsg.length===0){ 
-    await axios.post("http://localhost:8086/employees",employeeData).then((res)=>{
+    await axios.post(`${BASE_URL}/employees`, employeeData).then((res)=>{
       console.log(res.data);
     });
     }
